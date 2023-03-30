@@ -72,7 +72,7 @@ function estadoAleatorio() {
     if (naoRepetirEstados.includes(estadoAleatorioAtual)) { // Verifica se esse estado ja foi utilizado.
         estadoAleatorio()
         
-    } else if (naoRepetirEstados.length < 5) { // Verifica se ja foram todos os estados.
+    } else if (naoRepetirEstados.length < 26) { // Verifica se ja foram todos os estados.
         mapaEstado.src = `./imagens/mapa_${estadoAleatorioAtual}.png` // Troca a imagem do mapa de acordo com o estado atual.
         naoRepetirEstados.push(estadoAleatorioAtual) // Adiciona o estado à lista dos estados que ja foram escolhidos.
         respostaCerta = estadoNumeroAleatorio
