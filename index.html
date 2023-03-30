@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="main.js"></script>
+    <title>BRASIL</title>
+</head>
+<body>
+    <div class="div_global">
+        <div class="div_header">
+            <h1>Capitais do Brasil</h>
+        </div>
+        <div class="game">
+            <div class="mapa">
+                <img src="./imagens/mapa_brasil.png" alt="mapa_brasil" id="mapa">
+            </div>
+            <div class="direita" id="iniciar">
+                <button onclick="iniciar()" class="button0" id="iniciar">INICIAR</button>
+            </div>
+            <div class="direita" id="jogar">
+                <div class="pontuacao">
+                    <div>ACERTOS</div>
+                    <div class="pontos" id="pontos">0</div>
+                </div>
+                <button onclick="window.location.reload()" class="button0" id="reiniciar">REINICIAR</button>
+                <div class="alternativas" id="alternativas">
+                    <button onclick="proximo(0)" class="button1" id="button1"></button>
+                    <button onclick="proximo(1)" class="button2" id="button2"></button>
+                    <button onclick="proximo(2)" class="button3" id="button3"></button>
+                    <button onclick="proximo(3)" class="button4" id="button4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

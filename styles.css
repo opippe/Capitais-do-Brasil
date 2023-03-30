@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: antiquewhite;
+}
+
+.div_global {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_header {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.game {
+    max-width: 100%;
+    max-width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mapa {
+    max-width: 35rem;
+}
+
+.mapa > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pontuacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 1.5rem;
+    border-radius: 20px;
+    font-size: xx-large;
+    background-color: rgb(255, 209, 150);
+}
+
+.pontuacao > div {
+    background-color: inherit;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.direita {
+    width: 35rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+#start {
+    display: flex;
+}
+
+#jogar {
+    display: none;
+}
+
+#end {
+    display: none;
+}
+
+#reiniciar {
+    display: none;
+}
+
+.alternativas > button {
+    margin: 1rem;
+    width: 15rem;
+    height: 7rem;
+    border-radius: 20px;
+    font-size: x-large;
+    cursor: pointer;
+    border: none;
+    color: #f0f8ff;
+    line-height: 1;
+}
+
+.button0 {
+    background-color: #6639d7;
+    margin: 1rem 1.5rem;
+    width: 100%;
+    height: 5rem;
+    border-radius: 20px;
+    font-size: xx-large;
+    cursor: pointer;
+    border: none;
+    color: #f0f8ff;
+}
+
+.button0:hover {
+    background-color: #4d25b3;
+}
+
+.button1 {
+    background-color: #f0ad4e;
+}
+
+.button1:hover {
+    background-color: #ed9c28;
+}
+
+.button2 {
+    background-color: #428bca;
+}
+
+.button2:hover {
+    background-color: #3276b1;
+}
+
+.button3 {
+    background-color: #5cb85c;
+}
+
+.button3:hover {
+    background-color: #47a447;
+}
+
+.button4 {
+    background-color: #d9534f;
+}
+
+.button4:hover {
+    background-color: #d2322d;
+}
+
+
+@media (max-width: 1126px) {
+    .alternativas > button {
+        margin: 1rem;
+        width: 10rem;
+        height: 5rem;
+        border-radius: 20px;
+        font-size: x-large;
+    }
+
+    .button0 {
+        height: 5rem;
+    }
+}
